@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">medimoi</string>
+    <string name="todo">TODO</string>
+    <string name="legales"><u>Les conditions légales</u>.</string>
+</resources>

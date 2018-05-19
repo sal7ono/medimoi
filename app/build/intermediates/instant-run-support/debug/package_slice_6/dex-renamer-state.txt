@@ -1,0 +1,4 @@
+#Tue Apr 17 20:40:01 CEST 2018
+base.0=C\:\\Users\\salah\\Desktop\\EII1719\\medimoi\\medimoi\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\6
+path.0=classes.dex
+renamed.0=classes.dex

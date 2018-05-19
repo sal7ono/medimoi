@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.eii.medimoi.MainActivity"
+    tools:ignore="ExtraText">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton2"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/medimoi" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:background="@color/colorPrimary"
+        android:text="OK"
+        android:textColor="@color/colorAccent" />
+
+    <CheckBox
+        android:id="@+id/termes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginStart="71dp"
+        android:text="J'accepte " />
+
+    <Spinner
+        android:id="@+id/age"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/taille"
+        android:layout_centerVertical="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/age"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="47dp"
+        android:layout_marginStart="15dp"
+        app:srcCompat="@drawable/homme" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_marginEnd="14dp"
+        app:srcCompat="@drawable/femme" />
+
+    <Spinner
+        android:id="@+id/taille"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/poids"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp" />
+
+    <Spinner
+        android:id="@+id/poids"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/termes"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_centerVertical="true"
+        android:text="Votre age :"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/taille"
+        android:layout_alignStart="@+id/textView"
+        android:text="Votre taille :"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignTop="@+id/poids"
+        android:text="Votre poids :"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/termes"
+        android:layout_alignBottom="@+id/termes"
+        android:layout_toEndOf="@+id/termes"
+        android:text="@string/legales"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_dark"
+        tools:justificationMode="inter_word" />
+
+</RelativeLayout>
